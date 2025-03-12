@@ -1,0 +1,472 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta name="keywords" content="Marina Fleet Yacht,Luxury yacht rental,Yacht charter services,Private yacht hire,Marina yacht fleet,Yacht rental marina,
+  Premium yacht fleet,Yacht cruise marina,Luxury sailing experience, Yacht marina services, Private yacht marina,Yacht fleet services,Exclusive yacht hire,
+  Marina boat rental,Luxury yachts fleet,Marina yacht charter">
+  <meta name="description" content="Discover the ultimate luxury yacht experience with our Marina Fleet.Book your perfect yacht today and set sail on a unique journey.">
+  <title>Fishing Ships Gallery</title>
+  <link rel="icon" href="all images/logo.webp" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <style>
+    body {
+      background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+      background-attachment: fixed;
+      background-size: cover;
+    }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+        }
+        .banner {
+            position: relative;
+            text-align: center;
+            color: white;
+            width: 100%;
+        }
+        .banner img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            filter: brightness(70%);
+        }
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+        .banner-slogan {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px; /* Reduced gap between cards */
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            flex: 1;
+        }
+        @media (min-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .card {
+            perspective: 1000px;
+            display: flex;
+            justify-content: center;
+            width: 400px;
+            height: 400px;
+        }
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .card-front img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        .card-back {
+            background: linear-gradient(to right, #86baf2, #f6ade7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transform: rotateY(180deg);
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            color: white;
+            text-align: center;
+        }
+        .card-back h3 {
+          font-weight: bolder;
+            margin: 0 0 10px;
+            font-size: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+        .card-back p {
+          font-weight: lighter;
+            margin: 0 0 20px;
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .card-back button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #4ca386;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .card-back button:hover {
+            background-color: #197154;
+        }
+        header {
+	    background-color:#a9cec4;
+    }
+ 
+    footer {
+      background-color:#a9cec4;
+    }
+  </style>
+ </head>
+ <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+         <div class="container-fluid">
+           <a class="navbar-brand" href="index.html">
+          <img src="all images/marinaship.png" style="width: 100px; height: 55px;">
+          <b style="color: #058096;font-size: 21px;text-transform:capitalize;">Marina fleet</b>
+           </a>
+           <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <i class="fa-sharp fa-solid fa-bars-staggered"></i>
+          </button>
+  
+           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+             <ul class="navbar-nav menu-navbar-nav">
+               <li class="nav-item">
+                 <a class="nav-link" style="color: #00575a;" aria-current="page" href="index.html"><b>Home</b></a>
+               </li>
+  
+  
+               <li class="nav-item">
+                   <a class="nav-link " style="color: #00575a;" aria-current="page" href="newgallery.html"><b>Gallery</b></a>
+                 </li>
+  
+                 <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle active" style="color: #00575a;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     <b>Fleets</b>
+                   </a>
+                   <ul class="dropdown-menu " style="background-color: #53abb677;" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item " style="color:#032324;"  href="luxury ships.html"><b>Luxury Ships</b></a></li>
+                    <li><a class="dropdown-item" style="color: #032324;" href="sellingyatch.html"><b>Sailing Ships</b></a></li>
+                    <li><a class="dropdown-item" style="color:#032324;" href="militryship.html"><b>Military Ships</b></a></li>
+                    <li><a class="dropdown-item" style="color:#032324;" href="fishingyatch.html"><b>Fishing ships</b></a></li>
+                  </ul>
+                 </li>
+  
+                 <li class="nav-item">
+                   <a class="nav-link" style="color: #00575a;" href="about.html"><b>AboutUs</a>
+                     
+                   
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link"  style="color: #00575a ;" href="contact.html"><b>ContactUs</b></a>
+                 </li>
+                 
+               </ul>
+             </div>
+           </div>
+         </nav>
+   
+   </header>
+  <div class="banner">
+   <img alt="Luxury cruise ship sailing in the ocean" src="all images/fish baji .png"/>
+   <div class="banner-text">
+    Fishing Ships
+   </div>
+   <div class="banner-slogan">
+    Best Experience of every one
+   </div>
+  </div>
+  <div class="gallery">
+   <div class="card">
+    <div class="card-inner">
+     <div class="card-front">
+      <img alt="Cruise ship docked at a port with palm trees and a clear blue sky" src="all images/fish baji 2.png"/>
+     </div>
+     <div class="card-back">
+      <h3>
+       Ship Name
+      </h3>
+      <p>
+       This is a description of the ship. It is a luxurious cruise ship with many amenities.
+      </p>
+      <a href="booking.html"><button>
+       Buy Now
+      </button></a>
+     </div>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-inner">
+     <div class="card-front">
+      <img alt="selling yatch img/Marina-Fleet_files/premium_photo-1680831748191-d726a2f7b201.jpg" src="all images/fish baji ji (1).jpeg"/>
+     </div>
+     <div class="card-back">
+      <h3>
+       Ship Name
+      </h3>
+      <p>
+       This is a description of the ship. It is a luxurious cruise ship with many amenities.
+      </p>
+      <a href="booking.html"><button>
+       Buy Now
+      </button></a>
+     </div>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-inner">
+     <div class="card-front">
+      <img alt="Cruise ship sailing in the ocean during sunset with colorful lights" src="all images/fish.webp"/>
+     </div>
+     <div class="card-back">
+      <h3>
+       Ship Name
+      </h3>
+      <p>
+       This is a description of the ship. It is a luxurious cruise ship with many amenities.
+      </p>
+      <a href="booking.html"><button>
+       Buy Now
+      </button></a>
+     </div>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-inner">
+     <div class="card-front">
+      <img alt="Cruise ship docked at a port with a cityscape in the background" src="all images/fish3.jpeg"/>
+     </div>
+     <div class="card-back">
+     <p>
+       This is a description of the ship. It is a luxurious cruise ship with many amenities.
+      </p>
+      <a href="booking.html"><button>
+       Buy Now
+      </button></a>
+     </div>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-inner">
+     <div class="card-front">
+      <img alt="Cruise ship sailing in the ocean with a clear sky and smoke coming out of the chimney" src="all images/fish4.jpeg"/>
+     </div>
+     <div class="card-back">
+      <h3>
+       Ship Name
+      </h3>
+      <p>
+       This is a description of the ship. It is a luxurious cruise ship with many amenities.
+      </p>
+      <a href="booking.html"><button>
+       Buy Now
+      </button></a>
+     </div>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-inner">
+     <div class="card-front">
+      <img alt="Cruise ship sailing in the ocean with colorful artwork on the hull" src="all images/fishing-boat-parts.avif"/>
+     </div>
+     <div class="card-back">
+      <h3>
+       Ship Name
+      </h3>
+      <p>
+       This is a description of the ship. It is a luxurious cruise ship with many amenities.
+      </p>
+      <a href="booking.html"><button>
+       Buy Now
+      </button></a>
+     </div>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-inner">
+     <div class="card-front">
+      <img alt="Cruise ship docked at a port with a cityscape in the background" src="all images/fishingboat1.jpg"/>
+     </div>
+     <div class="card-back">
+      <h3>
+       Ship Name
+      </h3>
+      <p>
+       This is a description of the ship. It is a luxurious cruise ship with many amenities.
+      </p>
+      <a href="booking.html"><button>
+       Buy Now
+      </button></a>
+     </div>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-inner">
+     <div class="card-front">
+      <img alt="Cruise ship sailing in the ocean with colorful lights and a sunset in the background" src="all images/fish baji 2.png"/>
+     </div>
+     <div class="card-back">
+      <h3>
+       Ship Name
+      </h3>
+      <p>
+       This is a description of the ship. It is a luxurious cruise ship with many amenities.
+      </p>
+      <a href="booking.html"><button>
+       Buy Now
+      </button></a>
+     </div>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-inner">
+     <div class="card-front">
+      <img alt="Cruise ship sailing in the ocean with colorful artwork on the hull" src="selling yatch img/salling img 2.jpg"/>
+     </div>
+     <div class="card-back">
+      <h3>
+       Ship Name
+      </h3>
+      <p>
+       This is a description of the ship. It is a luxurious cruise ship with many amenities.
+      </p>
+      <a href="booking.html"><button>
+       Buy Now
+      </button></a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <img alt="Luxury cruise ship sailing in the ocean" width="1348px" height="300px" src="footerimg1.jpg"/>
+
+  <!-- Footer  -->
+  <footer class=" container-fluid my-5 mb-0 text-center text-lg-start "
+  style=" background-size: contain; background-color: #a9cec4;">
+
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom f-bg ">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span><b>Get connected with us on social networks:</b></span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="https://www.facebook.com/" class="me-4 text-reset">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+      <a href="https://twitter.com/" class="me-4 text-reset">
+        <ion-icon class="i" name="logo-twitter"></ion-icon>
+      </a>
+      <a href="https://www.google.com/"class="me-4 text-reset">
+        <ion-icon name="logo-google"></ion-icon>
+      </a>
+      <a href="https://instagram.com/" class="me-4 text-reset">
+        <ion-icon class="i" name="logo-instagram"></ion-icon>
+      </a>
+      <a href="https://www.aptechlearning.com/" class="me-4 text-reset">
+        <ion-icon name="thumbs-up-sharp"></ion-icon>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section>
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+
+            <h1>Marina-Fleet</h1>
+            The Pakistan Fleet Marine Forces (FMF) are combined general and special purpose forces within the
+            Pakistan Department of the Navy that perform offensive amphibious or expeditionary warfare and defensive
+            maritime employment
+          </h6>
+
+        </div>
+        <!-- Grid column -->
+
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+          <p>
+            <span class="sign">&#x27A4;</span><a href="index.html" class="text-reset">Home</a>
+          </p>
+          <p>
+            <span class="sign">&#x27A4;</span><a href="about.html" class="text-reset">About us</a>
+          </p>
+          <p>
+            <span class="sign">&#x27A4;</span><a href="contact.html" class="text-reset">Contact us</a>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p>
+            <ion-icon name="globe-sharp"></ion-icon></i>ALL OVER PAKISTAN
+          </p>
+          <p>
+            <ion-icon name="logo-android"></ion-icon></i><a href="aptechlearningnngmail.com"
+              class="text-reset">www.aptechnn@gmail.com</a>
+          </p>
+          <p><ion-icon name="call-outline"></ion-icon> + 92 371 5849652</p>
+          <p><ion-icon name="call-outline"></ion-icon>+ 92 371 5849622</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+
+    <ion-icon name="cloud-offline-sharp"></ion-icon>
+   <p>© Copyright Marina-Fleet.</p><br>
+      All Rights Reserved <br>
+      Designed by Marina Fleet</a>
+  </div>
+</footer>
+
+ </body>
+</html>
